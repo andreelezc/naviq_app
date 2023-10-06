@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul>
+    {% for property in properties %}
+        <li>{{ property.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

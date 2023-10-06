@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+Eliminar Criterio
+{% endblock %}
+
+{% block content %}
+    <p>¿Estás seguro de que deseas eliminar el criterio "{{ object.name }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <input type="submit" value="Confirmar">
+    </form>
+{% endblock %}

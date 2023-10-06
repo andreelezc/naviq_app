@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+Lista de Criterios
+{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for criterion in criteria %}
+            <li>{{ criterion.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

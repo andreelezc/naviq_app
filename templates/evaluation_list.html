@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Listado de Evaluaciones</h2>
+<ul>
+    {% for evaluation in evaluations %}
+        <li>{{ evaluation.date }} - {{ evaluation.user.username }} - <a href="{% url 'evaluation_edit' evaluation.pk %}">Editar</a> - <a href="{% url 'evaluation_delete' evaluation.pk %}">Eliminar</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

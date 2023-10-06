@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>¿Estás seguro de que deseas eliminar la propiedad "{{ object.name }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <input type="submit" value="Confirmar">
+</form>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul>
+    {% for application in applications %}
+        <li>{{ application.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

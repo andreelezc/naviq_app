@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul>
+    {% for answer_option in answer_options %}
+        <li>{{ answer_option.description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
